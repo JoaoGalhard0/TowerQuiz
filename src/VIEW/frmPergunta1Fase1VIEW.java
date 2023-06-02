@@ -6,23 +6,29 @@ package VIEW;
 
 import DAO.PerguntaDAO;
 import DAO.RespostaDAO;
+import DTO.RespostaDTO;
+import DTO.RespostaUsuarioDTO;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author JOAO PEDRO GALHARDO
  */
 public class frmPergunta1Fase1VIEW extends javax.swing.JFrame {
-
+    RespostaUsuarioDTO resp1;
     /**
      * Creates new form frmPerguntaVIEW
      */
     public frmPergunta1Fase1VIEW() {
         initComponents();
         PerguntaDAO dao = new PerguntaDAO();
+        
         dao.ListarPergunta(pergunta1TF);
+        
 
         RespostaDAO respdao = new RespostaDAO();
-        respdao.ListarResposta(resp1TF);
+        resp1 = respdao.ListarResposta(resp1TF);
+        
 
         RespostaDAO resp2dao = new RespostaDAO();
         resp2dao.ListarResposta2(resp2TF);
@@ -71,6 +77,11 @@ public class frmPergunta1Fase1VIEW extends javax.swing.JFrame {
 
         buttonGroup1.add(resp1TF);
         resp1TF.setForeground(new java.awt.Color(255, 255, 255));
+        resp1TF.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                resp1TFMouseClicked(evt);
+            }
+        });
         resp1TF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 resp1TFActionPerformed(evt);
@@ -82,6 +93,11 @@ public class frmPergunta1Fase1VIEW extends javax.swing.JFrame {
 
         buttonGroup1.add(resp3TF);
         resp3TF.setForeground(new java.awt.Color(255, 255, 255));
+        resp3TF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                resp3TFActionPerformed(evt);
+            }
+        });
 
         buttonGroup1.add(resp4TF);
         resp4TF.setForeground(new java.awt.Color(255, 255, 255));
@@ -174,6 +190,15 @@ public class frmPergunta1Fase1VIEW extends javax.swing.JFrame {
     private void resp1TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resp1TFActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_resp1TFActionPerformed
+
+    private void resp3TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resp3TFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_resp3TFActionPerformed
+
+    private void resp1TFMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_resp1TFMouseClicked
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null,resp1.getIdResposta());
+    }//GEN-LAST:event_resp1TFMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

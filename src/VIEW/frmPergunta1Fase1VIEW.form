@@ -145,6 +145,7 @@
             </Property>
           </Properties>
           <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="resp1TFMouseClicked"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="resp1TFActionPerformed"/>
           </Events>
         </Component>
@@ -167,6 +168,9 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="resp3TFActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="resp4TF">
           <Properties>

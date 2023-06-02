@@ -8,6 +8,9 @@ import DTO.ParticipacaoDTO;
 import DTO.RespostaUsuarioDTO;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 public class RespostaUsuarioDAO {
@@ -29,5 +32,7 @@ public class RespostaUsuarioDAO {
         }
 
     }
+    
+ 
 
 }
