@@ -12,7 +12,7 @@ Para conseguir realizar o Quiz de uma maneira eficaz, conceitos básicos sobre P
 
 🔧 Instalação
 
-Para instalar, baixe o arquivo zip ou siga o guia do GitHub para clonar os repositórios.
+Para instalar, baixe o arquivo zip ou siga o guia do GitHub para clonar os repositórios. link: https://github.com/jotaapee/TowerQuiz
 
 Sumário:
 
