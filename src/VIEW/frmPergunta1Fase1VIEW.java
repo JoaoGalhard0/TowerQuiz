@@ -7,7 +7,6 @@ package VIEW;
 import DAO.PerguntaDAO;
 import DAO.RespostaDAO;
 import DTO.RespostaDTO;
-import DTO.RespostaUsuarioDTO;
 import javax.swing.JOptionPane;
 
 /**
@@ -15,19 +14,18 @@ import javax.swing.JOptionPane;
  * @author JOAO PEDRO GALHARDO
  */
 public class frmPergunta1Fase1VIEW extends javax.swing.JFrame {
-    RespostaUsuarioDTO resp1;
+   
     /**
      * Creates new form frmPerguntaVIEW
      */
     public frmPergunta1Fase1VIEW() {
         initComponents();
         PerguntaDAO dao = new PerguntaDAO();
-        
         dao.ListarPergunta(pergunta1TF);
         
 
         RespostaDAO respdao = new RespostaDAO();
-        resp1 = respdao.ListarResposta(resp1TF);
+        respdao.ListarResposta(resp1TF);
         
 
         RespostaDAO resp2dao = new RespostaDAO();
@@ -197,7 +195,7 @@ public class frmPergunta1Fase1VIEW extends javax.swing.JFrame {
 
     private void resp1TFMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_resp1TFMouseClicked
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null,resp1.getIdResposta());
+        
     }//GEN-LAST:event_resp1TFMouseClicked
 
 

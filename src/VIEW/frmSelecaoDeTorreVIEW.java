@@ -153,20 +153,20 @@ public class frmSelecaoDeTorreVIEW extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        frmPergunta1Fase1VIEW PerguntaFrame = new frmPergunta1Fase1VIEW();
-        PerguntaFrame.setVisible(true);
+        frmAvisoVIEW AvisoFrame = new frmAvisoVIEW();
+        AvisoFrame.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        frmPergunta1Fase3VIEW Pergunta3Frame = new frmPergunta1Fase3VIEW();
-        Pergunta3Frame.setVisible(true);
+        frmAviso3VIEW AvisoFrame = new frmAviso3VIEW();
+        AvisoFrame.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        frmPergunta1Fase2VIEW Pergunta2Frame = new frmPergunta1Fase2VIEW();
-        Pergunta2Frame.setVisible(true);
+        frmAviso2VIEW AvisoFrame = new frmAviso2VIEW();
+        AvisoFrame.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 

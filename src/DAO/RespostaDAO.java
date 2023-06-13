@@ -5,7 +5,7 @@
 package DAO;
 
 import DTO.RespostaDTO;
-import DTO.RespostaUsuarioDTO;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -20,23 +20,18 @@ public class RespostaDAO {
     Connection conn;
     ResultSet rs;
 
-    public RespostaUsuarioDTO ListarResposta(JRadioButton respostaLabel) {
+    public void ListarResposta(JRadioButton respostaLabel) {
         conn = new ConexaoDAO().conectaBD();
 
         try {
-            String sql = "SELECT * FROM resposta where idResposta = 1;";
+            String sql = "SELECT Resposta FROM resposta where idResposta = 1;";
             PreparedStatement stm = conn.prepareStatement(sql);
             ResultSet rs = stm.executeQuery();
 
             if (rs.next()) {
-                String resposta = rs.getString("Resposta"); // Obtém o valor do campo "resposta" da tupla*/]
-                boolean certa = rs.getBoolean("Correta");
+                String resposta = rs.getString("resposta"); // Obtém o valor do campo "resposta" da tupla*/
                 // Insere o valor no TextField
                 respostaLabel.setText(resposta);
-                RespostaUsuarioDTO resp = new RespostaUsuarioDTO();
-                resp.setIdResposta(1);
-                resp.setIdParticipacao(0);
-                return resp;
             } else {
                 JOptionPane.showMessageDialog(null, "Nenhum resultado encontrado!");
             }
@@ -45,7 +40,7 @@ public class RespostaDAO {
             JOptionPane.showMessageDialog(null, "RespostaDAO" + erro);
 //           return null;
         }
-        return null;
+
     }
 
     public void ListarResposta2(JRadioButton respostaLabel2) {

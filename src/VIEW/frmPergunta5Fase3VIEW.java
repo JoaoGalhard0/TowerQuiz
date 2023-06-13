@@ -174,8 +174,8 @@ public class frmPergunta5Fase3VIEW extends javax.swing.JFrame {
     }//GEN-LAST:event_resp57TFActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        frmRanqueamentoVIEW RankingFrame = new frmRanqueamentoVIEW();
-        RankingFrame.setVisible(true);
+        frmFeedBackVIEW FeedBackFrame = new frmFeedBackVIEW();
+        FeedBackFrame.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 

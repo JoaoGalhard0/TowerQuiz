@@ -71,7 +71,7 @@ public class frmPrincipalVIEW extends javax.swing.JFrame {
         jButton3.setBackground(new java.awt.Color(0, 0, 0));
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("RANQUEAMENTO");
+        jButton3.setText("FEEDBACK");
         jButton3.setBorderPainted(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -161,8 +161,8 @@ public class frmPrincipalVIEW extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        frmRanqueamentoVIEW RankFrame = new frmRanqueamentoVIEW();
-        RankFrame.setVisible(true);
+        frmFeedBackVIEW FeedFrame = new frmFeedBackVIEW();
+        FeedFrame.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
