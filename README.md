@@ -25,9 +25,11 @@ Este projeto possui os seguintes recursos:
 Sistema de usuário, com uma interface de inicio com 2 botões, um para conectar caso o usuário ja seja registrado e outro para Cadastrar-se, caso ele ainda não for.
 Um menu onde o usuário ja esteja conectado, com um botão para inicar o questionário, outro para verificar o ranking e um para desconectar.
 Para finalizar, uma interface sera exibida com sua pontuação, o rank atingido e opções para retornar ou sair.
+
 ⚙️ Executando os testes
 
 Todos os ajustes realizados a partir de testes realizados pela nossa equipe podem ser visualizados a partir dos commits neste repositório.
+
 🛠️ Construído com:
 
 Linguagens: Java e SQL.
